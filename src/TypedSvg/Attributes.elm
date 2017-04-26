@@ -853,16 +853,16 @@ fontFamily : List String -> Attribute msg
 fontFamily families =
     case families of
         [] ->
-            attribute "fontFamily" "inherit"
+            attribute "font-family" "inherit"
 
         _ ->
-            attribute "fontFamily" (String.join ", " families)
+            attribute "font-family" (String.join ", " families)
 
 
 {-| -}
 fontSize : Length -> Attribute msg
 fontSize length =
-    attribute "fontSize" <| lengthToString length
+    attribute "font-size" <| lengthToString length
 
 
 {-| The `fontSizeAdjust` attribute allows authors to specify an aspect value
@@ -879,7 +879,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-size-adjust
 -}
 fontSizeAdjust : FontSizeAdjust -> Attribute msg
 fontSizeAdjust fontSizeAdjust =
-    attribute "fontSizeAdjust" <| fontSizeAdjustToString fontSizeAdjust
+    attribute "font-size-adjust" <| fontSizeAdjustToString fontSizeAdjust
 
 
 {-| The `fontStretch` attribute indicates the desired amount of condensing or
@@ -895,7 +895,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-stretch
 -}
 fontStretch : FontStretch -> Attribute msg
 fontStretch fontStretch =
-    attribute "fontStretch" <| fontStretchToString fontStretch
+    attribute "font-stretch" <| fontStretchToString fontStretch
 
 
 {-| The `fontStyle` attribute specifies whether the text is to be rendered using
@@ -911,7 +911,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-style
 -}
 fontStyle : FontStyle -> Attribute msg
 fontStyle fontStyle =
-    attribute "fontStyle" <| fontStyleToString fontStyle
+    attribute "font-style" <| fontStyleToString fontStyle
 
 
 {-| The `fontVariant` attribute indicates whether the text is to be rendered
@@ -928,7 +928,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-variant
 -}
 fontVariant : FontVariant -> Attribute msg
 fontVariant fontVariant =
-    attribute "fontVariant" <| fontVariantToString fontVariant
+    attribute "font-variant" <| fontVariantToString fontVariant
 
 
 {-| The `fontWeight` attribute refers to the boldness or lightness of the glyphs
@@ -944,7 +944,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/font-weight
 -}
 fontWeight : FontWeight -> Attribute msg
 fontWeight fontWeight =
-    attribute "fontWeight" <| fontWeightToString fontWeight
+    attribute "font-weight" <| fontWeightToString fontWeight
 
 
 {-| -}
