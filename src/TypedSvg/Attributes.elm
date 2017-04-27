@@ -1954,7 +1954,7 @@ target =
 {-| -}
 textAnchor : AnchorAlignment -> Attribute msg
 textAnchor anchorAlignment =
-    attribute "textAnchor" <| anchorAlignmentToString anchorAlignment
+    attribute "text-anchor" <| anchorAlignmentToString anchorAlignment
 
 
 {-| -}
