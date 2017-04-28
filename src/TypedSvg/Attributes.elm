@@ -449,7 +449,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolat
 -}
 colorInterpolation : ColorInterpolation -> Attribute msg
 colorInterpolation colorInterpolation =
-    attribute "colorInterpolation" <| colorInterpolationToString colorInterpolation
+    attribute "color-interpolation" <| colorInterpolationToString colorInterpolation
 
 
 
@@ -1465,7 +1465,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overlinePosition
 -}
 overlinePosition : number -> Attribute msg
 overlinePosition position =
-    attribute "overlinePosition" <| toString position
+    attribute "overline-position" <| toString position
 
 
 {-| The `overlineThickness` attribute represents the ideal thickness of
@@ -1478,7 +1478,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/overlineThicknes
 -}
 overlineThickness : number -> Attribute msg
 overlineThickness thickness =
-    attribute "overlineThickness" <| toString thickness
+    attribute "overline-thickness" <| toString thickness
 
 
 {-| -}
@@ -1763,7 +1763,7 @@ See: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shapeRendering
 -}
 shapeRendering : ShapeRendering -> Attribute msg
 shapeRendering shapeRendering =
-    attribute "shapeRendering" <| shapeRenderingToString shapeRendering
+    attribute "shape-rendering" <| shapeRenderingToString shapeRendering
 
 
 {-| -}
